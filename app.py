@@ -13,7 +13,7 @@ app.config["MAIL_DEFAULT_SENDER"] = "fzzzjnzl@gmail.com"
 
 mail = Mail(app)
 
-@app.route("/send-email")
+@app.route("/send_email")
 def send_email():
     try:
         msg = Message("测试邮件", recipients=["fzzzjnzl@gmail.com"])
